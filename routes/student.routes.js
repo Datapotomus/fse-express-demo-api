@@ -1,9 +1,8 @@
 const express = require('express');
+const studentController = require('../controllers/student.controller');
 const router = express.Router();
 
 //Call to get all the users
-router.get('/students', (req, res) => {
-  res.send('This is the default student route')
-})
+router.get('/students', studentController.findAll)
 
 module.exports = router;
