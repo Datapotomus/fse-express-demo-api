@@ -1,0 +1,12 @@
+{
+  "name": "fse-express-demo-api",
+  "version": "1.0.0",
+  "description": "A starter express API for FSE class",
+  "main": "index.js",
+  "author": "Me",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
+}
