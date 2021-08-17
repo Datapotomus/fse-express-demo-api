@@ -7,6 +7,9 @@ app.get('/', (req, res) =>{
   res.send('You have reached the top-level route with a GET')
 })
 
+const studentRouter = require('./routes/student.routes')
+app.use('/api', studentRouter);
+
 app.listen(port, () => {
   console.log(`Example app listening on port: ${port}`)
 })
